@@ -7,9 +7,17 @@ from .models import Inquiry
 
 @admin.register(Inquiry)
 class InquiryAdmin(admin.ModelAdmin):
-    list_display = ("name", "email", "country", "job_title", "job_type", "created_at")
+    list_display = (
+        "name",
+        "email",
+        "country",
+        "job_title",
+        "job_type",
+        "reviewed",
+        "created_at",
+    )
     search_fields = ("name", "email", "company_name", "country", "job_title")
-    list_filter = ("country", "job_type", "created_at")
+    list_filter = ("country", "job_type", "reviewed", "created_at")
     actions = ["export_selected"]
 
     def export_selected(self, request, queryset):

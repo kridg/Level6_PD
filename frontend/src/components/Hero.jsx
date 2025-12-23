@@ -25,12 +25,12 @@ const Hero = () => (
           >
             Book a discovery call
           </Link>
-          <a
-            href="#solutions"
+          <Link
+            to="/solutions"
             className="px-5 py-3 rounded-full border-2 border-gray-300 text-gray-800 hover:border-primary hover:text-primary hover:-translate-y-1 hover:scale-105 hover:bg-orange-50 transition-all duration-300 text-center min-h-[44px] flex items-center justify-center"
           >
             Explore capabilities
-          </a>
+          </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 text-sm">
           {[

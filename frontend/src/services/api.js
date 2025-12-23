@@ -34,6 +34,15 @@ export const fetchInquiries = async (token, filters = {}) => {
   return response.data;
 };
 
+export const updateInquiry = async (token, id, payload) => {
+  const response = await axios.patch(
+    `${API_BASE}/inquiries/${id}/`,
+    payload,
+    { headers: authHeader(token) }
+  );
+  return response.data;
+};
+
 export const deleteInquiry = async (token, id) => {
   await axios.delete(`${API_BASE}/inquiries/${id}/`, {
     headers: authHeader(token),

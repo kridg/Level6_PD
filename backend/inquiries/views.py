@@ -21,10 +21,16 @@ class InquiryViewSet(viewsets.ModelViewSet):
         queryset = super().get_queryset()
         country = self.request.query_params.get("country")
         job_type = self.request.query_params.get("job_type")
+        reviewed = self.request.query_params.get("reviewed")
         if country:
             queryset = queryset.filter(country__iexact=country)
         if job_type:
             queryset = queryset.filter(job_type=job_type)
+        if reviewed is not None:
+            if reviewed.lower() in ["true", "1", "yes"]:
+                queryset = queryset.filter(reviewed=True)
+            elif reviewed.lower() in ["false", "0", "no"]:
+                queryset = queryset.filter(reviewed=False)
         return queryset
 
     @action(detail=False, methods=["get"])

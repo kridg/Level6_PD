@@ -64,7 +64,7 @@ const ContactForm = () => {
               <Field
                 name="name"
                 className="w-full border border-gray-200 bg-gray-50 rounded-lg px-3 py-2.5 sm:py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary min-h-[44px] text-base"
-                placeholder="Jane Doe"
+                placeholder="Enter your name here"
                 autoComplete="name"
               />
               <ErrorMessage
@@ -94,7 +94,7 @@ const ContactForm = () => {
                 name="phone"
                 type="tel"
                 className="w-full border border-gray-200 bg-gray-50 rounded-lg px-3 py-2.5 sm:py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary min-h-[44px] text-base"
-                placeholder="+1 555 123 4567"
+                placeholder="Enter your phone number"
                 autoComplete="tel"
               />
               <ErrorMessage
@@ -110,7 +110,7 @@ const ContactForm = () => {
               <Field
                 name="company_name"
                 className="w-full border border-gray-200 bg-gray-50 rounded-lg px-3 py-2.5 sm:py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary min-h-[44px] text-base"
-                placeholder="Acme Inc."
+                placeholder="Google"
                 autoComplete="organization"
               />
               <ErrorMessage
@@ -124,7 +124,7 @@ const ContactForm = () => {
               <Field
                 name="country"
                 className="w-full border border-gray-200 bg-gray-50 rounded-lg px-3 py-2.5 sm:py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary min-h-[44px] text-base"
-                placeholder="United States"
+                placeholder="Enter your country"
                 autoComplete="country-name"
               />
               <ErrorMessage
@@ -138,7 +138,7 @@ const ContactForm = () => {
               <Field
                 name="job_title"
                 className="w-full border border-gray-200 bg-gray-50 rounded-lg px-3 py-2.5 sm:py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary min-h-[44px] text-base"
-                placeholder="Director of AI"
+                placeholder="Enter your job title"
                 autoComplete="job-title"
               />
               <ErrorMessage

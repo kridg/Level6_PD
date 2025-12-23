@@ -15,22 +15,22 @@ describe("ContactForm validation", () => {
 
   test("submits with valid data", async () => {
     render(<ContactForm />);
-    fireEvent.change(screen.getByPlaceholderText(/jane doe/i), {
-      target: { value: "Jane Doe" },
+    fireEvent.change(screen.getByPlaceholderText(/enter your name here/i), {
+      target: { value: "Alex Smith" },
     });
     fireEvent.change(screen.getByPlaceholderText(/you@example.com/i), {
       target: { value: "jane@example.com" },
     });
-    fireEvent.change(screen.getByPlaceholderText(/\+1 555/i), {
+    fireEvent.change(screen.getByPlaceholderText(/enter your phone number/i), {
       target: { value: "+1 555 123 4567" },
     });
-    fireEvent.change(screen.getByPlaceholderText(/acme inc/i), {
-      target: { value: "Acme" },
+    fireEvent.change(screen.getByPlaceholderText(/google/i), {
+      target: { value: "Google" },
     });
-    fireEvent.change(screen.getByPlaceholderText(/united states/i), {
+    fireEvent.change(screen.getByPlaceholderText(/enter your country/i), {
       target: { value: "USA" },
     });
-    fireEvent.change(screen.getByPlaceholderText(/director of ai/i), {
+    fireEvent.change(screen.getByPlaceholderText(/enter your job title/i), {
       target: { value: "Director of AI" },
     });
     fireEvent.change(

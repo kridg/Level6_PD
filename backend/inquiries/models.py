@@ -18,6 +18,7 @@ class Inquiry(models.Model):
     job_title = models.CharField(max_length=100)
     job_details = models.TextField()
     job_type = models.CharField(max_length=50, choices=JOB_CHOICES, default="other")
+    reviewed = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

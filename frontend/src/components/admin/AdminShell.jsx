@@ -1,10 +1,12 @@
+import { UserCircle2 } from "lucide-react";
+
 const AdminShell = ({ children, onLogout }) => (
   <div className="min-h-screen bg-[#f5f7fb] text-gray-900">
     <header className="border-b border-gray-200 bg-white/90 backdrop-blur">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold">
-            AI
+          <div className="h-10 w-10 rounded-xl bg-orange-100 border border-orange-200 flex items-center justify-center text-primary">
+            <UserCircle2 className="h-6 w-6" aria-hidden="true" />
           </div>
           <div>
             <p className="text-sm text-gray-500">Admin Console</p>

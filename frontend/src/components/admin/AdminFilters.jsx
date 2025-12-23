@@ -19,6 +19,15 @@ const AdminFilters = ({ filters, onChange, onRefresh }) => (
         <option value="research">Research</option>
         <option value="other">Other</option>
       </select>
+      <select
+        value={filters.reviewed ?? ""}
+        onChange={(e) => onChange({ ...filters, reviewed: e.target.value })}
+        className="rounded-lg bg-gray-50 border border-gray-200 px-3 py-2 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+      >
+        <option value="">All statuses</option>
+        <option value="true">Reviewed</option>
+        <option value="false">Unreviewed</option>
+      </select>
     </div>
     <div className="flex gap-2">
       <button
