@@ -142,14 +142,14 @@ const AdminPanel = () => {
   return (
     <AdminShell onLogout={handleLogout}>
       <div className="space-y-4 text-gray-900">
-        <div className="grid sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {statCards.map((card) => (
             <div
               key={card.label}
               className="rounded-xl bg-white border border-gray-200 p-4 shadow-sm"
             >
-              <p className="text-xs text-gray-500">{card.label}</p>
-              <p className="text-2xl font-bold text-gray-900">{card.value}</p>
+              <p className="text-xs sm:text-sm text-gray-500">{card.label}</p>
+              <p className="text-xl sm:text-2xl font-bold text-gray-900 mt-1">{card.value}</p>
             </div>
           ))}
         </div>
@@ -175,11 +175,11 @@ const AdminPanel = () => {
         )}
         {activeInquiry && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center px-4 py-6 bg-black/50"
+            className="fixed inset-0 z-50 flex items-center justify-center px-4 sm:px-6 py-4 sm:py-6 bg-black/50"
             role="dialog"
             aria-modal="true"
           >
-            <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl bg-white shadow-2xl border border-gray-200 p-6 space-y-4">
+            <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-xl sm:rounded-2xl bg-white shadow-2xl border border-gray-200 p-4 sm:p-6 space-y-4">
               <div className="flex items-start justify-between gap-3">
                 <div className="space-y-1">
                   <p className="text-xs text-gray-500">Inquiry detail</p>

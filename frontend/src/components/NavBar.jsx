@@ -16,7 +16,6 @@ const NavBar = () => {
     { href: "/feedback", label: "Results" },
     { href: "/events", label: "Events" },
     { href: "/contact", label: "Contact" },
-    { href: "/admin-panel", label: "Admin" },
   ];
 
   return (

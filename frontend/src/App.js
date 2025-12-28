@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import LandingPage from "./pages/LandingPage";
 import ContactPage from "./pages/ContactPage";
@@ -16,7 +16,6 @@ import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (location.hash) {
@@ -27,9 +26,12 @@ function App() {
     }
   }, [location]);
 
+  // Check if current route is an admin route
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
   return (
     <div className="min-h-screen flex flex-col">
-      <NavBar />
+      {!isAdminRoute && <NavBar />}
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -42,10 +44,11 @@ function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
-          <Route path="/admin-panel" element={<AdminPanel />} />
+          <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/admin/*" element={<AdminPanel />} />
         </Routes>
       </main>
-      <Footer />
+      {!isAdminRoute && <Footer />}
     </div>
   );
 }
