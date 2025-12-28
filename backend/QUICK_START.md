@@ -15,23 +15,28 @@
 1. **Open Command Prompt (not PowerShell)**
 
 2. **Navigate to backend folder:**
-   ```
-   cd "C:\1drive\Level6\Pritam\Product Development\Product\backend"
+   ```cmd
+   cd backend
    ```
 
-3. **Activate virtual environment:**
+3. **Create virtual environment (if not exists):**
+   ```cmd
+   python -m venv env
    ```
+
+4. **Activate virtual environment:**
+   ```cmd
    env\Scripts\activate.bat
    ```
    You should see `(env)` at the start of your prompt.
 
-4. **Verify it worked:**
-   ```
+5. **Verify it worked:**
+   ```cmd
    where python
    ```
    Should show: `...\backend\env\Scripts\python.exe`
 
-5. **Install dependencies (if needed):**
+6. **Install dependencies (if needed):**
    ```
    pip install -r requirements.txt
    ```
@@ -65,16 +70,16 @@
 
 2. **Navigate to backend:**
    ```powershell
-   cd "C:\1drive\Level6\Pritam\Product Development\Product\backend"
+   cd backend
    ```
 
-3. **Set execution policy (one-time only):**
+4. **Set execution policy (one-time only):**
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
    Type `Y` when prompted.
 
-4. **Activate virtual environment:**
+5. **Activate virtual environment:**
    ```powershell
    .\env\Scripts\Activate.ps1
    ```
@@ -84,7 +89,7 @@
    cmd /c "env\Scripts\activate.bat"
    ```
 
-5. **Continue with steps 5-10 from CMD method above**
+6. **Continue with steps 6-11 from CMD method above**
 
 ## Troubleshooting
 

@@ -3,20 +3,77 @@
 AI-Solutions is a full-stack demo for an applied AI consultancy. It includes a marketing site, inquiry intake form,
 and an admin console to manage inquiries and content (services, events, testimonials, FAQs) backed by a Django REST API.
 
-## Project structure
+## Project Structure
 - `backend/` – Django project `ai_solutions` with `inquiries` and `content` apps and DRF endpoints.
 - `frontend/` – React (CRA) + Tailwind UI.
 
 ## Prerequisites
-- Python 3.11+ and pip
-- Node 18+ and npm
-- Git
 
-## Backend setup
+Before you begin, ensure you have the following installed:
+- **Python 3.11+** and pip
+- **Node.js 18+** and npm
+- **Git**
+
+To verify your installations:
+```bash
+python --version  # Should be 3.11 or higher
+node --version    # Should be 18 or higher
+npm --version
+git --version
+```
+
+## Quick Start
+
+> 📖 **New to this project?** Check out [SETUP.md](SETUP.md) for a detailed step-by-step guide.
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+### 2. Backend Setup
+
+**Windows (Easiest):**
+- Navigate to backend: `cd backend`
+- Double-click `start_backend.bat` - This handles everything automatically!
+
+**Windows PowerShell:**
+```powershell
+cd backend
+.\start_backend.ps1
+```
+
+**Mac/Linux or Manual Setup:**
+See [Backend Setup](#backend-setup) section below.
+
+### 3. Frontend Setup
+
+Open a **new terminal window** and run:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+The frontend will automatically open at `http://localhost:3000`
+
+### 4. Access the Application
+
+- **Frontend:** http://localhost:3000
+- **Backend API:** http://localhost:8000/api
+- **Django Admin:** http://localhost:8000/admin/
+- **Admin Panel:** http://localhost:3000/admin
+
+## Backend Setup
 
 ### EASIEST METHOD - Use startup scripts:
 
-**Just double-click `backend/start_backend.bat`** - This handles everything automatically!
+**Windows:** Double-click `backend/start_backend.bat` - This handles everything automatically!
+
+**PowerShell:** Run `cd backend && .\start_backend.ps1`
 
 ### Manual Setup
 
@@ -26,10 +83,10 @@ and an admin console to manage inquiries and content (services, events, testimon
 
 2. **Navigate to backend directory:**
    ```cmd
-   cd "C:\1drive\Level6\Pritam\Product Development\Product\backend"
+   cd backend
    ```
 
-3. **Create virtual environment (if not already created):**
+3. **Create virtual environment:**
    ```cmd
    python -m venv env
    ```
@@ -172,20 +229,20 @@ python manage.py createsuperuser
 python manage.py runserver 8000
 ```
 
-## Frontend setup
+## Frontend Setup
 
 1. **Navigate to frontend directory:**
-   ```powershell
+   ```bash
    cd frontend
    ```
 
 2. **Install dependencies:**
-   ```powershell
+   ```bash
    npm install
    ```
 
 3. **Start the development server:**
-   ```powershell
+   ```bash
    npm start
    ```
 
@@ -193,14 +250,14 @@ python manage.py runserver 8000
 
    **Note:** The frontend uses `npm start` (not `npm run dev`) as it's a Create React App project.
 
-## Environment variables
+## Environment Variables
 
 ### Backend (`.env` file in `backend/` directory):
 
-Create a `.env` file in the `backend/` directory with:
+**Optional:** Create a `.env` file in the `backend/` directory if you want to customize settings:
 
 ```
-DJANGO_SECRET_KEY=change-me-to-a-secure-key
+DJANGO_SECRET_KEY=your-secret-key-here
 DJANGO_DEBUG=True
 DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
 POSTGRES_DB=ai_solutions
@@ -210,7 +267,10 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 ```
 
-**Note:** If PostgreSQL environment variables are not set, the app will automatically use SQLite (`db.sqlite3`).
+**Note:** 
+- If no `.env` file exists, the app will use default settings (SQLite database)
+- If PostgreSQL environment variables are not set, the app will automatically use SQLite (`db.sqlite3`)
+- The app works out of the box without a `.env` file for local development
 
 ### Frontend (`.env` file in `frontend/` directory - optional):
 
@@ -218,7 +278,7 @@ POSTGRES_PORT=5432
 REACT_APP_API_URL=http://localhost:8000/api
 ```
 
-If not set, it defaults to `http://localhost:8000/api`.
+**Note:** If not set, it defaults to `http://localhost:8000/api`. Only create this file if you need to change the API URL.
 
 ## API endpoints
 
@@ -289,8 +349,14 @@ If not set, it defaults to `http://localhost:8000/api`.
 - **Modern UI**: Tailwind CSS, transitions, animated sections, responsive NavBar and mobile menu
 - **Auth & security**: token auth endpoint, automatic token creation, CORS configured, environment-based settings
 
-## Notes
+## Important Notes
 
-- SQLite is used automatically when Postgres env vars are absent, enabling quick local demos
-- All content (events, feedback, FAQs, services) is editable from Django admin at `/admin/`
-- Public content endpoints are readable without auth; inquiry management is protected by token auth
+- **Database:** SQLite is used automatically when PostgreSQL environment variables are not set, enabling quick local demos without additional setup
+- **Content Management:** All content (events, feedback, FAQs, services) can be edited from Django admin at `http://localhost:8000/admin/`
+- **Authentication:** Public content endpoints are readable without auth; inquiry management is protected by token authentication
+- **Environment Variables:** The app works out of the box without a `.env` file. Only create one if you need to customize settings or use PostgreSQL
+- **Admin Panel:** The admin panel is accessible at `/admin` route and requires authentication. Regular users cannot access it through navigation
+
+## Troubleshooting
+
+If you encounter issues, check the [Troubleshooting](#troubleshooting) section below or refer to `SETUP.md` for detailed setup instructions.

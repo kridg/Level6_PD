@@ -7,42 +7,63 @@
 ## 📋 Prerequisites
 
 - Python 3.11+ installed
-- Virtual environment already created (in `env/` folder)
+- Git installed
 
 ## 🔧 Manual Setup
 
-### Step 1: Activate Virtual Environment
+### Step 1: Navigate to Backend Directory
 
-#### Option A: Command Prompt (CMD) - RECOMMENDED
+```bash
+cd backend
+```
+
+### Step 2: Create Virtual Environment
+
+**Windows:**
 ```cmd
-cd "C:\1drive\Level6\Pritam\Product Development\Product\backend"
+python -m venv env
+```
+
+**Mac/Linux:**
+```bash
+python3 -m venv env
+```
+
+### Step 3: Activate Virtual Environment
+
+#### Option A: Windows Command Prompt (CMD) - RECOMMENDED
+```cmd
 env\Scripts\activate.bat
 ```
 
-#### Option B: PowerShell
+#### Option B: Windows PowerShell
 ```powershell
-cd "C:\1drive\Level6\Pritam\Product Development\Product\backend"
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\env\Scripts\Activate.ps1
 ```
 
+#### Option C: Mac/Linux
+```bash
+source env/bin/activate
+```
+
 **Verify activation:** You should see `(env)` at the start of your prompt.
 
-### Step 2: Install Dependencies
+### Step 4: Install Dependencies
 
-```cmd
+```bash
 pip install -r requirements.txt
 ```
 
-### Step 3: Run Migrations
+### Step 5: Run Migrations
 
-```cmd
+```bash
 python manage.py migrate
 ```
 
-### Step 4: Create Superuser (First Time Only)
+### Step 6: Create Superuser (First Time Only)
 
-```cmd
+```bash
 python manage.py createsuperuser
 ```
 
@@ -51,9 +72,9 @@ Enter:
 - Email: (your email)
 - Password: (your password)
 
-### Step 5: Load Initial Content
+### Step 7: Load Initial Content (Optional but Recommended)
 
-```cmd
+```bash
 python manage.py load_initial_data
 ```
 
@@ -63,9 +84,9 @@ This populates:
 - FAQs
 - Services
 
-### Step 6: Start Server
+### Step 8: Start Server
 
-```cmd
+```bash
 python manage.py runserver 8000
 ```
 
