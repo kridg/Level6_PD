@@ -4,7 +4,7 @@ import CTASection from "../components/CTASection";
 
 const SecondaryHero = () => (
   <section className="py-12 sm:py-14 md:py-16 bg-white border-b border-gray-200 w-full" id="approach">
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 sm:gap-10 items-center w-full">
+    <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 items-center">
       <div className="space-y-4 sm:space-y-5 w-full">
         <span className="pill text-xs sm:text-sm">Blueprints to production</span>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -63,7 +63,7 @@ const SecondaryHero = () => (
 
 const ProcessSection = () => (
   <section className="py-12 sm:py-14 md:py-16 bg-orange-50 border-t border-orange-100 w-full" id="process">
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between flex-wrap gap-4 mb-6 sm:mb-8">
         <div>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">How we deliver</h2>
@@ -115,7 +115,7 @@ const LandingPage = () => (
     <SecondaryHero />
     <ProcessSection />
     <section className="bg-gradient-to-r from-orange-50 via-white to-orange-50 py-12 sm:py-14 md:py-16 border-t border-orange-100 w-full" id="contact">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div className="flex flex-col md:flex-row items-start gap-6 sm:gap-8">
           <div className="md:w-1/2 space-y-3 sm:space-y-4 w-full">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">Engage with our architects</h2>

@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-orange-100 w-full">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-3.5 md:py-4 flex items-center justify-between w-full">
+      <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-3 sm:py-3.5 md:py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group min-w-[44px] min-h-[44px] flex-shrink-0">
           <SiteLogo size="md" />
         </Link>
@@ -59,7 +59,7 @@ const NavBar = () => {
       </div>
       {open && (
         <div className="lg:hidden border-t border-gray-200 bg-white shadow-sm animate-slideDown w-full">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 space-y-2 text-sm w-full">
+          <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 xl:px-12 py-4 space-y-2 text-sm">
             {links.map((link) => (
               <Link
                 key={link.label}

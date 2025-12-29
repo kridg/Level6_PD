@@ -9,7 +9,7 @@ const CTASection = () => {
   return (
     <section className="py-12 sm:py-14 md:py-16 bg-gradient-to-r from-primary via-orange-600 to-primary text-white relative overflow-hidden w-full">
       <div className="absolute inset-0" style={patternBg}></div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-6 sm:gap-8 items-center relative z-10 w-full">
+      <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 grid lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 items-center relative z-10">
         <div className="lg:col-span-7 space-y-3 sm:space-y-4 animate-zoom-in w-full">
           <p className="pill bg-white/20 text-white border border-white/40 hover:bg-white/30 hover-zoom transition-all duration-300 text-xs sm:text-sm">
             Co-build with production engineers

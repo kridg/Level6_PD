@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 
 const ApproachHero = () => (
   <section className="py-16 bg-white border-b border-gray-200">
-    <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+    <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 items-center">
       <div className="space-y-4">
         <span className="pill">Blueprints to production</span>
         <h2 className="text-3xl font-bold text-gray-900 leading-tight">

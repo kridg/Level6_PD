@@ -295,6 +295,52 @@ p, span, h1, h2, h3, h4, h5, h6, li {
   transform: translateZ(0);
 }
 
+/* Small screen optimizations - ensure content fills viewport */
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1920px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.75rem, 3vw, 2.75rem);
+  }
+  
+  h3 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  }
+}
+
+/* Large laptop and desktop optimizations - use more screen space */
+@media (min-width: 1440px) {
+  .container-responsive {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-responsive {
+    max-width: 1800px;
+  }
+}
+
+/* Ultra-wide screen optimizations */
+@media (min-width: 2560px) {
+  .container-responsive {
+    max-width: 2400px;
+  }
+}
+
 /* Print styles */
 @media print {
   * {

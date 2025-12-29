@@ -2,7 +2,7 @@ import ContactForm from "../components/ContactForm";
 
 const ContactPage = () => (
   <section className="py-12 sm:py-14 md:py-16 bg-gradient-to-br from-orange-50 via-white to-orange-50 w-full" id="contact">
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-6 sm:gap-8 w-full">
+    <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 grid lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
       <div className="lg:col-span-5 rounded-2xl border border-orange-100 bg-white/90 p-4 sm:p-5 md:p-6 space-y-3 sm:space-y-4 text-gray-900 shadow-sm w-full">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">Contact AI-Solutions</h1>
         <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">

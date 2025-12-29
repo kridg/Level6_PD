@@ -32,7 +32,7 @@ const Highlights = () => {
   if (loading) {
     return (
       <section id="solutions" className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
           <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
             <h2 className="text-2xl font-bold text-gray-900">What we deliver</h2>
             <span className="pill">Outcome-led roadmaps · Secure by design</span>
@@ -49,7 +49,7 @@ const Highlights = () => {
 
   return (
     <section id="solutions" className="py-12 sm:py-14 md:py-16 bg-white w-full">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 sm:mb-8 flex-wrap gap-3">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">What we deliver</h2>
           <span className="pill text-xs sm:text-sm">Outcome-led roadmaps · Secure by design</span>

@@ -16,7 +16,7 @@ const FAQ = () => {
   if (loading) {
     return (
       <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
           <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
             <h2 className="text-2xl font-bold text-charcoal">Frequently asked</h2>
             <span className="pill">Transparent ways of working</span>
@@ -33,7 +33,7 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="py-16 bg-white">
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-7xl xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
           <h2 className="text-2xl font-bold text-charcoal">Frequently asked</h2>
           <span className="pill">Transparent ways of working</span>

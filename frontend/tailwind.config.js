@@ -10,6 +10,13 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      maxWidth: {
+        '7xl': '80rem',
+        '8xl': '88rem',
+        '9xl': '96rem',
+        '10xl': '112rem',
+        'full': '100%',
+      },
       colors: {
         primary: "#FF6600",
         charcoal: "#1f2933",

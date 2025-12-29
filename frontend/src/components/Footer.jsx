@@ -3,7 +3,7 @@ import SiteLogo from "./SiteLogo";
 
 const Footer = () => (
   <footer className="bg-gradient-to-b from-white via-orange-50 to-white border-t border-orange-100 pt-8 sm:pt-10 mt-8 sm:mt-12 w-full">
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
       <div className="card bg-white/90 border-orange-100 p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 flex flex-col md:flex-row gap-4 sm:gap-6 items-start md:items-center justify-between w-full">
         <div className="w-full md:w-auto">
           <p className="text-xs sm:text-sm font-semibold text-primary uppercase tracking-wide">

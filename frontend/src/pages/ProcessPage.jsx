@@ -1,6 +1,6 @@
 const ProcessSection = () => (
   <section className="py-16 bg-orange-50 border-t border-orange-100">
-    <div className="max-w-6xl mx-auto px-4">
+    <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
       <div className="flex items-start justify-between flex-wrap gap-4 mb-8">
         <div>
           <h2 className="text-2xl font-bold text-gray-900">How we deliver</h2>
@@ -49,7 +49,7 @@ const ProcessSection = () => (
 const ProcessPage = () => (
   <div className="bg-white">
     <section className="py-14 bg-gradient-to-r from-orange-50 via-white to-orange-50 border-b border-orange-100">
-      <div className="max-w-6xl mx-auto px-4 space-y-3">
+      <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 space-y-3">
         <span className="pill">Clarity from day one</span>
         <h1 className="text-3xl font-bold text-gray-900">A delivery path you can see and measure</h1>
         <p className="text-gray-700 max-w-3xl">

@@ -5,7 +5,7 @@ const Hero = () => (
     id="mission"
     className="bg-gradient-to-br from-white to-orange-50 py-12 sm:py-14 md:py-16 border-b border-orange-100 w-full overflow-hidden"
   >
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-8 sm:gap-10 items-center w-full">
+    <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 grid lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 items-center">
       <div className="lg:col-span-7 space-y-4 sm:space-y-5 fade-up w-full">
         <div className="pill text-xs sm:text-sm">
           Proven delivery pods · Responsible AI · End-to-end ownership

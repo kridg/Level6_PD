@@ -15,7 +15,7 @@ const FeedbackGrid = () => {
   if (loading) {
     return (
       <section id="feedback" className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
           <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
             <h2 className="text-2xl font-bold text-gray-900">What partners say</h2>
             <span className="pill">High trust · Fast delivery · Observable AI</span>
@@ -32,7 +32,7 @@ const FeedbackGrid = () => {
 
   return (
     <section id="feedback" className="py-12 sm:py-14 md:py-16 bg-white w-full">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="w-full max-w-full lg:max-w-7xl xl:max-w-[95%] 2xl:max-w-[1800px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between flex-wrap gap-3 mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">What partners say</h2>
           <span className="pill text-xs sm:text-sm">High trust · Fast delivery · Observable AI</span>
