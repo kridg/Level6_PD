@@ -15,7 +15,6 @@ const NavBar = () => {
     { href: "/process", label: "Process" },
     { href: "/feedback", label: "Results" },
     { href: "/events", label: "Events" },
-    { href: "/contact", label: "Contact" },
   ];
 
   return (
